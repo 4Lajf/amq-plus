@@ -1,0 +1,114 @@
+{
+  "timestamp": "2025-10-26T00:00:00.000Z",
+  "seed": "test-combined-heavy-16",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 25,
+  "filters": [
+    {
+      "definitionId": "songs-and-types",
+      "instanceId": "songs-types-combo",
+      "settings": {
+        "mode": "percentage",
+        "total": 25,
+        "types": {
+          "openings": 60,
+          "endings": 30,
+          "inserts": 10
+        },
+        "typesRanges": {
+          "openings": {
+            "min": 35,
+            "max": 70
+          },
+          "endings": {
+            "min": 20,
+            "max": 45
+          },
+          "inserts": {
+            "min": 0,
+            "max": 25
+          }
+        }
+      }
+    },
+    {
+      "definitionId": "anime-type",
+      "instanceId": "anime-type-combo",
+      "settings": {
+        "mode": "basic",
+        "enabled": [
+          "tv",
+          "movie"
+        ]
+      }
+    },
+    {
+      "definitionId": "anime-score",
+      "instanceId": "anime-score-combo",
+      "settings": {
+        "mode": "range",
+        "min": 6,
+        "max": 10,
+        "disabled": []
+      }
+    },
+    {
+      "definitionId": "genres",
+      "instanceId": "genres-combo",
+      "settings": {
+        "mode": "basic",
+        "included": [
+          "Action"
+        ],
+        "excluded": [
+          "Horror"
+        ],
+        "optional": [],
+        "showRates": false
+      }
+    },
+    {
+      "definitionId": "vintage",
+      "instanceId": "vintage-combo",
+      "settings": {
+        "mode": "advanced",
+        "total": 25,
+        "ranges": [
+          {
+            "from": {
+              "year": 2010,
+              "season": "Winter"
+            },
+            "to": {
+              "year": 2020,
+              "season": "Fall"
+            },
+            "value": 25,
+            "valueRange": {
+              "min": 20,
+              "max": 25
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-1",
+      "nodeType": "song-list",
+      "mode": "masterlist",
+      "useEntirePool": false
+    }
+  ]
+}

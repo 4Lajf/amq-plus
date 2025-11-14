@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-10-26T00:00:00.000Z",
+  "seed": "test-tags-advanced-15",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 20,
+  "filters": [
+    {
+      "definitionId": "tags",
+      "instanceId": "tags-2",
+      "settings": {
+        "mode": "percentage",
+        "items": [
+          {
+            "label": "School",
+            "value": 8,
+            "status": "optional"
+          },
+          {
+            "label": "Male Protagonist",
+            "value": 0,
+            "status": "exclude"
+          }
+        ],
+        "showRates": true
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-1",
+      "nodeType": "song-list",
+      "mode": "masterlist",
+      "useEntirePool": false
+    }
+  ]
+}
+

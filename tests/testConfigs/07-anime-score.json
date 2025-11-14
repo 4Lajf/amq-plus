@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-10-26T00:00:00.000Z",
+  "seed": "test-anime-score-07",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 20,
+  "filters": [
+    {
+      "definitionId": "anime-score",
+      "instanceId": "anime-score-1",
+      "settings": {
+        "mode": "range",
+        "min": 7,
+        "max": 10,
+        "disabled": [9]
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-1",
+      "nodeType": "song-list",
+      "mode": "masterlist",
+      "useEntirePool": false
+    }
+  ]
+}
+
