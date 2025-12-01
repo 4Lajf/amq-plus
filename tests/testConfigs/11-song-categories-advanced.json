@@ -1,0 +1,96 @@
+{
+  "timestamp": "2025-10-26T00:00:00.000Z",
+  "seed": "test-song-categories-advanced-11",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 20,
+  "filters": [
+    {
+      "definitionId": "song-categories",
+      "instanceId": "song-categories-2",
+      "settings": {
+        "mode": "advanced",
+        "total": 20,
+        "categories": {
+          "openings": {
+            "standard": 5,
+            "chanting": 3,
+            "character": 2
+          },
+          "endings": {
+            "standard": 3,
+            "chanting": 2,
+            "character": 2
+          },
+          "inserts": {
+            "standard": 2,
+            "chanting": 1,
+            "character": 0
+          }
+        },
+        "categoriesRanges": {
+          "openings": {
+            "standard": {
+              "min": 4,
+              "max": 6
+            },
+            "chanting": {
+              "min": 2,
+              "max": 4
+            },
+            "character": {
+              "min": 1,
+              "max": 3
+            }
+          },
+          "endings": {
+            "standard": {
+              "min": 2,
+              "max": 4
+            },
+            "chanting": {
+              "min": 1,
+              "max": 3
+            },
+            "character": {
+              "min": 1,
+              "max": 3
+            }
+          },
+          "inserts": {
+            "standard": {
+              "min": 1,
+              "max": 3
+            },
+            "chanting": {
+              "min": 0,
+              "max": 2
+            },
+            "character": {
+              "min": 0,
+              "max": 1
+            }
+          }
+        }
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-1",
+      "nodeType": "song-list",
+      "mode": "masterlist",
+      "useEntirePool": false
+    }
+  ]
+}
+

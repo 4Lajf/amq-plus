@@ -1,0 +1,54 @@
+{
+  "timestamp": "2025-10-26T00:00:00.000Z",
+  "seed": "test-song-types-01",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 20,
+  "filters": [
+    {
+      "definitionId": "songs-and-types",
+      "instanceId": "songs-types-1",
+      "settings": {
+        "mode": "percentage",
+        "total": 20,
+        "types": {
+          "openings": 60,
+          "endings": 30,
+          "inserts": 10
+        },
+        "typesRanges": {
+          "openings": {
+            "min": 50,
+            "max": 70
+          },
+          "endings": {
+            "min": 20,
+            "max": 40
+          },
+          "inserts": {
+            "min": 0,
+            "max": 20
+          }
+        }
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-1",
+      "nodeType": "song-list",
+      "mode": "masterlist",
+      "useEntirePool": false
+    }
+  ]
+}
+

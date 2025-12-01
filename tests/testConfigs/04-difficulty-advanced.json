@@ -1,0 +1,65 @@
+{
+  "timestamp": "2025-10-26T00:00:00.000Z",
+  "seed": "test-difficulty-advanced-04",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 20,
+  "filters": [
+    {
+      "definitionId": "song-difficulty",
+      "instanceId": "difficulty-2",
+      "settings": {
+        "mode": "advanced",
+        "viewMode": "advanced",
+        "total": 20,
+        "ranges": [
+          {
+            "from": 70,
+            "to": 100,
+            "songCount": 5,
+            "songCountRange": {
+              "min": 4,
+              "max": 6
+            }
+          },
+          {
+            "from": 30,
+            "to": 70,
+            "songCount": 10,
+            "songCountRange": {
+              "min": 8,
+              "max": 12
+            }
+          },
+          {
+            "from": 0,
+            "to": 30,
+            "songCount": 5,
+            "songCountRange": {
+              "min": 4,
+              "max": 6
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-1",
+      "nodeType": "song-list",
+      "mode": "masterlist",
+      "useEntirePool": false
+    }
+  ]
+}
+
