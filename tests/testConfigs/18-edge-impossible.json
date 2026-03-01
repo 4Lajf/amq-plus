@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-10-26T00:00:00.000Z",
+  "seed": "test-edge-impossible-18",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 100,
+  "filters": [
+    {
+      "definitionId": "genres",
+      "instanceId": "genres-impossible",
+      "settings": {
+        "mode": "basic",
+        "included": ["Action", "Romance"],
+        "excluded": ["Action"],
+        "optional": [],
+        "showRates": false
+      }
+    },
+    {
+      "definitionId": "anime-score",
+      "instanceId": "anime-score-impossible",
+      "settings": {
+        "mode": "range",
+        "min": 10,
+        "max": 10,
+        "disabled": [10]
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-1",
+      "nodeType": "song-list",
+      "mode": "masterlist",
+      "useEntirePool": false
+    }
+  ]
+}
+

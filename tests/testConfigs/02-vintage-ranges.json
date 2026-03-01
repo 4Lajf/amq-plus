@@ -1,0 +1,67 @@
+{
+  "timestamp": "2025-10-26T00:00:00.000Z",
+  "seed": "test-vintage-02",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 20,
+  "filters": [
+    {
+      "definitionId": "vintage",
+      "instanceId": "vintage-1",
+      "settings": {
+        "mode": "advanced",
+        "total": 20,
+        "ranges": [
+          {
+            "from": {
+              "year": 2010,
+              "season": "Winter"
+            },
+            "to": {
+              "year": 2015,
+              "season": "Fall"
+            },
+            "value": 10,
+            "valueRange": {
+              "min": 8,
+              "max": 12
+            }
+          },
+          {
+            "from": {
+              "year": 2016,
+              "season": "Winter"
+            },
+            "to": {
+              "year": 2020,
+              "season": "Fall"
+            },
+            "value": 10,
+            "valueRange": {
+              "min": 8,
+              "max": 12
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-1",
+      "nodeType": "song-list",
+      "mode": "masterlist",
+      "useEntirePool": false
+    }
+  ]
+}
+

@@ -1,0 +1,1449 @@
+{
+  "edges": [
+    {
+      "id": "e0",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "song-list-1",
+      "target": "basic-settings-2"
+    },
+    {
+      "id": "e1",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "basic-settings-2",
+      "target": "songs-and-types-3",
+      "targetHandle": "main"
+    },
+    {
+      "id": "e2",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "songs-and-types-3",
+      "target": "anime-type-4",
+      "targetHandle": "main"
+    },
+    {
+      "id": "e3",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "anime-type-4",
+      "target": "vintage-5",
+      "targetHandle": "main"
+    },
+    {
+      "id": "e4",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "vintage-5",
+      "target": "song-difficulty-6",
+      "targetHandle": "main"
+    },
+    {
+      "id": "e5",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "song-difficulty-6",
+      "target": "player-score-7",
+      "targetHandle": "main"
+    },
+    {
+      "id": "e6",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "player-score-7",
+      "target": "anime-score-8",
+      "targetHandle": "main"
+    },
+    {
+      "id": "e7",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "anime-score-8",
+      "target": "song-categories-9",
+      "targetHandle": "main"
+    },
+    {
+      "id": "e8",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "song-categories-9",
+      "target": "genres-10",
+      "targetHandle": "main"
+    },
+    {
+      "id": "e9",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "genres-10",
+      "target": "tags-11",
+      "targetHandle": "main"
+    },
+    {
+      "id": "e10",
+      "data": {},
+      "type": "default",
+      "style": {
+        "stroke": "rgba(99, 102, 241, 0.7)",
+        "strokeWidth": 2
+      },
+      "source": "tags-11",
+      "target": "number-of-songs-12"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "song-list-1",
+      "data": {
+        "id": "song-list",
+        "icon": "📋",
+        "type": "songList",
+        "color": "#3b82f6",
+        "title": "Song List",
+        "unique": false,
+        "deletable": true,
+        "instanceId": "song-list-1",
+        "description": "Choose base song pool (entire database, user lists, or public lists)",
+        "routeBadges": [],
+        "currentValue": {
+          "mode": "masterlist",
+          "useEntirePool": false,
+          "providerImport": {
+            "fileData": null,
+            "providerType": "amq-export",
+            "processedData": null
+          },
+          "selectedListId": null,
+          "songPercentage": null,
+          "userListImport": {
+            "platform": "anilist",
+            "username": "",
+            "selectedLists": {
+              "dropped": false,
+              "on_hold": false,
+              "planning": false,
+              "watching": true,
+              "completed": true
+            }
+          },
+          "selectedListName": null
+        },
+        "defaultValue": {
+          "mode": "masterlist",
+          "useEntirePool": false,
+          "providerImport": {
+            "fileData": null,
+            "providerType": "amq-export",
+            "processedData": null
+          },
+          "selectedListId": null,
+          "songPercentage": null,
+          "userListImport": {
+            "platform": "anilist",
+            "username": "",
+            "selectedLists": {
+              "dropped": false,
+              "on_hold": false,
+              "planning": false,
+              "watching": true,
+              "completed": true
+            }
+          },
+          "selectedListName": null
+        },
+        "isSourceNode": true,
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "songList",
+      "measured": {
+        "width": 200,
+        "height": 118
+      },
+      "position": {
+        "x": -450,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "basic-settings-2",
+      "data": {
+        "id": "basic-settings",
+        "icon": "⚙️",
+        "type": "basicSettings",
+        "color": "#6366f1",
+        "title": "Basic Settings",
+        "unique": false,
+        "deletable": true,
+        "instanceId": "basic-settings-2",
+        "description": "Core lobby configuration settings",
+        "routeBadges": [],
+        "currentValue": {
+          "guessTime": {
+            "max": 60,
+            "min": 1,
+            "type": "range",
+            "label": "Guess Time",
+            "value": {
+              "max": 25,
+              "min": 15,
+              "useRange": false,
+              "staticValue": 20
+            }
+          },
+          "samplePoint": {
+            "type": "complex",
+            "label": "Sample Point",
+            "value": {
+              "end": 100,
+              "start": 0,
+              "useRange": true,
+              "staticValue": 20
+            }
+          },
+          "playbackSpeed": {
+            "type": "complex",
+            "label": "Playback Speed",
+            "value": {
+              "mode": "static",
+              "staticValue": 1,
+              "randomValues": [
+                1
+              ]
+            }
+          },
+          "duplicateShows": {
+            "type": "boolean",
+            "label": "Duplicate Shows",
+            "value": true
+          },
+          "extraGuessTime": {
+            "max": 15,
+            "min": 0,
+            "type": "range",
+            "label": "Extra Guess Time",
+            "value": {
+              "max": 15,
+              "min": 5,
+              "useRange": false,
+              "staticValue": 0
+            }
+          },
+          "preventSameSongSpam": {
+            "type": "boolean",
+            "label": "Prevent same song spam (room-wide)",
+            "value": false
+          }
+        },
+        "defaultValue": {
+          "guessTime": {
+            "max": 60,
+            "min": 1,
+            "type": "range",
+            "label": "Guess Time",
+            "value": {
+              "max": 25,
+              "min": 15,
+              "useRange": false,
+              "staticValue": 20
+            }
+          },
+          "samplePoint": {
+            "type": "complex",
+            "label": "Sample Point",
+            "value": {
+              "end": 100,
+              "start": 0,
+              "useRange": true,
+              "staticValue": 20
+            }
+          },
+          "playbackSpeed": {
+            "type": "complex",
+            "label": "Playback Speed",
+            "value": {
+              "mode": "static",
+              "staticValue": 1,
+              "randomValues": [
+                1
+              ]
+            }
+          },
+          "duplicateShows": {
+            "type": "boolean",
+            "label": "Duplicate Shows",
+            "value": true
+          },
+          "extraGuessTime": {
+            "max": 15,
+            "min": 0,
+            "type": "range",
+            "label": "Extra Guess Time",
+            "value": {
+              "max": 15,
+              "min": 5,
+              "useRange": false,
+              "staticValue": 0
+            }
+          },
+          "preventSameSongSpam": {
+            "type": "boolean",
+            "label": "Prevent same song spam (room-wide)",
+            "value": false
+          }
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "basicSettings",
+      "measured": {
+        "width": 400,
+        "height": 435
+      },
+      "position": {
+        "x": 0,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "songs-and-types-3",
+      "data": {
+        "id": "songs-and-types",
+        "icon": "🎵",
+        "type": "filter",
+        "color": "#16a34a",
+        "title": "Songs & Types",
+        "unique": false,
+        "formType": "complex-songs-and-types",
+        "deletable": true,
+        "instanceId": "songs-and-types-3",
+        "description": "Filter by song type and selection mode",
+        "routeBadges": [],
+        "currentValue": {
+          "mode": "count",
+          "songCount": {
+            "max": 25,
+            "min": 15,
+            "value": 20,
+            "random": false
+          },
+          "songTypes": {
+            "endings": {
+              "count": 10,
+              "random": true,
+              "enabled": true,
+              "countMax": 20,
+              "countMin": 0,
+              "percentage": 50,
+              "percentageMax": 60,
+              "percentageMin": 40
+            },
+            "inserts": {
+              "count": 0,
+              "random": false,
+              "enabled": false,
+              "countMax": 5,
+              "countMin": 0,
+              "percentage": 0,
+              "percentageMax": 10,
+              "percentageMin": 0
+            },
+            "openings": {
+              "count": 10,
+              "random": true,
+              "enabled": true,
+              "countMax": 20,
+              "countMin": 0,
+              "percentage": 50,
+              "percentageMax": 60,
+              "percentageMin": 40
+            }
+          },
+          "songSelection": {
+            "random": {
+              "count": 0,
+              "random": false,
+              "enabled": true,
+              "countMax": 15,
+              "countMin": 5,
+              "percentage": 0,
+              "percentageMax": 75,
+              "percentageMin": 25
+            },
+            "watched": {
+              "count": 20,
+              "random": false,
+              "enabled": true,
+              "countMax": 15,
+              "countMin": 5,
+              "percentage": 50,
+              "percentageMax": 75,
+              "percentageMin": 25
+            }
+          }
+        },
+        "defaultValue": {
+          "mode": "count",
+          "songCount": {
+            "max": 25,
+            "min": 15,
+            "value": 20,
+            "random": false
+          },
+          "songTypes": {
+            "endings": {
+              "count": 10,
+              "random": true,
+              "enabled": true,
+              "countMax": 20,
+              "countMin": 0,
+              "percentage": 50,
+              "percentageMax": 60,
+              "percentageMin": 40
+            },
+            "inserts": {
+              "count": 0,
+              "random": false,
+              "enabled": false,
+              "countMax": 5,
+              "countMin": 0,
+              "percentage": 0,
+              "percentageMax": 10,
+              "percentageMin": 0
+            },
+            "openings": {
+              "count": 10,
+              "random": true,
+              "enabled": true,
+              "countMax": 20,
+              "countMin": 0,
+              "percentage": 50,
+              "percentageMax": 60,
+              "percentageMin": 40
+            }
+          },
+          "songSelection": {
+            "random": {
+              "count": 0,
+              "random": false,
+              "enabled": true,
+              "countMax": 15,
+              "countMin": 5,
+              "percentage": 0,
+              "percentageMax": 75,
+              "percentageMin": 25
+            },
+            "watched": {
+              "count": 20,
+              "random": false,
+              "enabled": true,
+              "countMax": 15,
+              "countMin": 5,
+              "percentage": 50,
+              "percentageMax": 75,
+              "percentageMin": 25
+            }
+          }
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "filter",
+      "measured": {
+        "width": 240,
+        "height": 125
+      },
+      "position": {
+        "x": 450,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "anime-type-4",
+      "data": {
+        "id": "anime-type",
+        "icon": "📺",
+        "type": "filter",
+        "color": "#eab308",
+        "title": "Anime Type",
+        "unique": false,
+        "formType": "complex-anime-type",
+        "deletable": true,
+        "instanceId": "anime-type-4",
+        "description": "Filter by anime type (TV, Movie, OVA, etc.)",
+        "routeBadges": [],
+        "currentValue": {
+          "tv": true,
+          "ona": true,
+          "ova": true,
+          "mode": "count",
+          "movie": true,
+          "dubbed": false,
+          "special": true,
+          "advanced": {
+            "tv": {
+              "max": 40,
+              "min": 10,
+              "random": false,
+              "enabled": true,
+              "countMax": 10,
+              "countMin": 2,
+              "countValue": 4,
+              "percentageMax": 40,
+              "percentageMin": 10,
+              "percentageValue": 20
+            },
+            "ona": {
+              "max": 40,
+              "min": 10,
+              "random": false,
+              "enabled": true,
+              "countMax": 10,
+              "countMin": 2,
+              "countValue": 4,
+              "percentageMax": 40,
+              "percentageMin": 10,
+              "percentageValue": 20
+            },
+            "ova": {
+              "max": 40,
+              "min": 10,
+              "random": false,
+              "enabled": true,
+              "countMax": 10,
+              "countMin": 2,
+              "countValue": 4,
+              "percentageMax": 40,
+              "percentageMin": 10,
+              "percentageValue": 20
+            },
+            "movie": {
+              "max": 40,
+              "min": 10,
+              "random": false,
+              "enabled": true,
+              "countMax": 10,
+              "countMin": 2,
+              "countValue": 4,
+              "percentageMax": 40,
+              "percentageMin": 10,
+              "percentageValue": 20
+            },
+            "special": {
+              "max": 40,
+              "min": 10,
+              "random": false,
+              "enabled": true,
+              "countMax": 10,
+              "countMin": 2,
+              "countValue": 4,
+              "percentageMax": 40,
+              "percentageMin": 10,
+              "percentageValue": 20
+            }
+          },
+          "viewMode": "simple",
+          "rebroadcast": false
+        },
+        "defaultValue": {
+          "tv": true,
+          "ona": true,
+          "ova": true,
+          "mode": "count",
+          "movie": true,
+          "dubbed": false,
+          "special": true,
+          "advanced": {
+            "tv": {
+              "max": 40,
+              "min": 10,
+              "random": false,
+              "enabled": true,
+              "countMax": 10,
+              "countMin": 2,
+              "countValue": 4,
+              "percentageMax": 40,
+              "percentageMin": 10,
+              "percentageValue": 20
+            },
+            "ona": {
+              "max": 40,
+              "min": 10,
+              "random": false,
+              "enabled": true,
+              "countMax": 10,
+              "countMin": 2,
+              "countValue": 4,
+              "percentageMax": 40,
+              "percentageMin": 10,
+              "percentageValue": 20
+            },
+            "ova": {
+              "max": 40,
+              "min": 10,
+              "random": false,
+              "enabled": true,
+              "countMax": 10,
+              "countMin": 2,
+              "countValue": 4,
+              "percentageMax": 40,
+              "percentageMin": 10,
+              "percentageValue": 20
+            },
+            "movie": {
+              "max": 40,
+              "min": 10,
+              "random": false,
+              "enabled": true,
+              "countMax": 10,
+              "countMin": 2,
+              "countValue": 4,
+              "percentageMax": 40,
+              "percentageMin": 10,
+              "percentageValue": 20
+            },
+            "special": {
+              "max": 40,
+              "min": 10,
+              "random": false,
+              "enabled": true,
+              "countMax": 10,
+              "countMin": 2,
+              "countValue": 4,
+              "percentageMax": 40,
+              "percentageMin": 10,
+              "percentageValue": 20
+            }
+          },
+          "viewMode": "simple",
+          "rebroadcast": false
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "filter",
+      "measured": {
+        "width": 240,
+        "height": 105
+      },
+      "position": {
+        "x": 800,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "vintage-5",
+      "data": {
+        "id": "vintage",
+        "icon": "📅",
+        "type": "filter",
+        "color": "#9333ea",
+        "title": "Vintage",
+        "unique": false,
+        "formType": "complex-vintage",
+        "deletable": true,
+        "instanceId": "vintage-5",
+        "description": "Filter songs by anime air date",
+        "routeBadges": [],
+        "currentValue": {
+          "mode": "percentage",
+          "ranges": [
+            {
+              "to": {
+                "year": 2026,
+                "season": "Winter"
+              },
+              "from": {
+                "year": 1944,
+                "season": "Winter"
+              },
+              "count": 20,
+              "percentage": 100,
+              "useAdvanced": false
+            }
+          ]
+        },
+        "defaultValue": {
+          "mode": "percentage",
+          "ranges": [
+            {
+              "to": {
+                "year": 2026,
+                "season": "Winter"
+              },
+              "from": {
+                "year": 1944,
+                "season": "Winter"
+              },
+              "count": 20,
+              "percentage": 100,
+              "useAdvanced": false
+            }
+          ]
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "filter",
+      "measured": {
+        "width": 240,
+        "height": 126
+      },
+      "position": {
+        "x": 1150,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "song-difficulty-6",
+      "data": {
+        "id": "song-difficulty",
+        "icon": "⭐",
+        "type": "filter",
+        "color": "#dc2626",
+        "title": "Song Difficulty",
+        "unique": false,
+        "formType": "complex-song-difficulty",
+        "deletable": true,
+        "instanceId": "song-difficulty-6",
+        "description": "Filter songs by difficulty rating",
+        "routeBadges": [],
+        "currentValue": {
+          "easy": {
+            "enabled": true,
+            "maxCount": 20,
+            "minCount": 0,
+            "countValue": 5,
+            "randomRange": true,
+            "maxPercentage": 40,
+            "minPercentage": 25,
+            "percentageValue": 25
+          },
+          "hard": {
+            "enabled": true,
+            "maxCount": 20,
+            "minCount": 0,
+            "countValue": 5,
+            "randomRange": true,
+            "maxPercentage": 40,
+            "minPercentage": 25,
+            "percentageValue": 25
+          },
+          "mode": "count",
+          "medium": {
+            "enabled": true,
+            "maxCount": 20,
+            "minCount": 0,
+            "countValue": 10,
+            "randomRange": true,
+            "maxPercentage": 40,
+            "minPercentage": 25,
+            "percentageValue": 50
+          },
+          "ranges": [],
+          "viewMode": "basic"
+        },
+        "defaultValue": {
+          "easy": {
+            "enabled": true,
+            "maxCount": 20,
+            "minCount": 0,
+            "countValue": 5,
+            "randomRange": true,
+            "maxPercentage": 40,
+            "minPercentage": 25,
+            "percentageValue": 25
+          },
+          "hard": {
+            "enabled": true,
+            "maxCount": 20,
+            "minCount": 0,
+            "countValue": 5,
+            "randomRange": true,
+            "maxPercentage": 40,
+            "minPercentage": 25,
+            "percentageValue": 25
+          },
+          "mode": "count",
+          "medium": {
+            "enabled": true,
+            "maxCount": 20,
+            "minCount": 0,
+            "countValue": 10,
+            "randomRange": true,
+            "maxPercentage": 40,
+            "minPercentage": 25,
+            "percentageValue": 50
+          },
+          "ranges": [],
+          "viewMode": "basic"
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "filter",
+      "measured": {
+        "width": 240,
+        "height": 105
+      },
+      "position": {
+        "x": 1500,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "player-score-7",
+      "data": {
+        "id": "player-score",
+        "icon": "🎯",
+        "type": "filter",
+        "color": "#ea580c",
+        "title": "Player Score",
+        "unique": false,
+        "formType": "complex-player-score",
+        "deletable": true,
+        "instanceId": "player-score-7",
+        "description": "Filter songs by player score",
+        "routeBadges": [],
+        "currentValue": {
+          "max": 10,
+          "min": 1,
+          "mode": "range",
+          "disallowed": [],
+          "percentages": {},
+          "perScoreMode": "count"
+        },
+        "defaultValue": {
+          "max": 10,
+          "min": 1,
+          "mode": "range",
+          "disallowed": [],
+          "percentages": {},
+          "perScoreMode": "count"
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "filter",
+      "measured": {
+        "width": 240,
+        "height": 126
+      },
+      "position": {
+        "x": 1850,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "anime-score-8",
+      "data": {
+        "id": "anime-score",
+        "icon": "⭐",
+        "type": "filter",
+        "color": "#2563eb",
+        "title": "Anime Score",
+        "unique": false,
+        "formType": "complex-anime-score",
+        "deletable": true,
+        "instanceId": "anime-score-8",
+        "description": "Filter songs by anime score/rating",
+        "routeBadges": [],
+        "currentValue": {
+          "max": 10,
+          "min": 1,
+          "mode": "range",
+          "disallowed": [],
+          "percentages": {},
+          "perScoreMode": "count"
+        },
+        "defaultValue": {
+          "max": 10,
+          "min": 1,
+          "mode": "range",
+          "disallowed": [],
+          "percentages": {},
+          "perScoreMode": "count"
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "filter",
+      "measured": {
+        "width": 240,
+        "height": 126
+      },
+      "position": {
+        "x": 2200,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "song-categories-9",
+      "data": {
+        "id": "song-categories",
+        "icon": "🎼",
+        "type": "filter",
+        "color": "#db2777",
+        "title": "Song Categories",
+        "unique": false,
+        "formType": "complex-song-categories",
+        "deletable": true,
+        "instanceId": "song-categories-9",
+        "description": "Filter by song category (Standard, Instrumental, etc.)",
+        "routeBadges": [],
+        "currentValue": {
+          "mode": "count",
+          "endings": {
+            "chanting": true,
+            "standard": true,
+            "character": true,
+            "instrumental": true
+          },
+          "inserts": {
+            "chanting": true,
+            "standard": true,
+            "character": true,
+            "instrumental": true
+          },
+          "advanced": {
+            "endings": {
+              "chanting": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "standard": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "character": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "instrumental": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              }
+            },
+            "inserts": {
+              "chanting": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 1,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "standard": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 1,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "character": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 1,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "instrumental": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 1,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              }
+            },
+            "openings": {
+              "chanting": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 9
+              },
+              "standard": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 9
+              },
+              "character": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 9
+              },
+              "instrumental": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 9
+              }
+            }
+          },
+          "openings": {
+            "chanting": true,
+            "standard": true,
+            "character": true,
+            "instrumental": true
+          },
+          "viewMode": "simple"
+        },
+        "defaultValue": {
+          "mode": "count",
+          "endings": {
+            "chanting": true,
+            "standard": true,
+            "character": true,
+            "instrumental": true
+          },
+          "inserts": {
+            "chanting": true,
+            "standard": true,
+            "character": true,
+            "instrumental": true
+          },
+          "advanced": {
+            "endings": {
+              "chanting": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "standard": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "character": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "instrumental": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              }
+            },
+            "inserts": {
+              "chanting": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 1,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "standard": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 1,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "character": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 1,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              },
+              "instrumental": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 1,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 8
+              }
+            },
+            "openings": {
+              "chanting": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 9
+              },
+              "standard": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 9
+              },
+              "character": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 9
+              },
+              "instrumental": {
+                "max": 20,
+                "min": 5,
+                "random": false,
+                "enabled": true,
+                "countMax": 4,
+                "countMin": 1,
+                "countValue": 2,
+                "percentageMax": 20,
+                "percentageMin": 5,
+                "percentageValue": 9
+              }
+            }
+          },
+          "openings": {
+            "chanting": true,
+            "standard": true,
+            "character": true,
+            "instrumental": true
+          },
+          "viewMode": "simple"
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "filter",
+      "measured": {
+        "width": 240,
+        "height": 105
+      },
+      "position": {
+        "x": 2550,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "genres-10",
+      "data": {
+        "id": "genres",
+        "icon": "🎭",
+        "type": "filter",
+        "color": "#16a34a",
+        "title": "Genres",
+        "unique": false,
+        "formType": "complex-genres",
+        "deletable": true,
+        "instanceId": "genres-10",
+        "description": "Filter by anime genres",
+        "routeBadges": [],
+        "currentValue": {
+          "mode": "count",
+          "advanced": {},
+          "excluded": [],
+          "included": [],
+          "optional": [],
+          "viewMode": "basic"
+        },
+        "defaultValue": {
+          "mode": "count",
+          "advanced": {},
+          "excluded": [],
+          "included": [],
+          "optional": [],
+          "viewMode": "basic"
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "filter",
+      "measured": {
+        "width": 240,
+        "height": 105
+      },
+      "position": {
+        "x": 2900,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "tags-11",
+      "data": {
+        "id": "tags",
+        "icon": "🏷️",
+        "type": "filter",
+        "color": "#2563eb",
+        "title": "Tags",
+        "unique": false,
+        "formType": "complex-tags",
+        "deletable": true,
+        "instanceId": "tags-11",
+        "description": "Filter by anime tags",
+        "routeBadges": [],
+        "currentValue": {
+          "mode": "count",
+          "advanced": {},
+          "excluded": [],
+          "included": [],
+          "optional": [],
+          "viewMode": "basic"
+        },
+        "defaultValue": {
+          "mode": "count",
+          "advanced": {},
+          "excluded": [],
+          "included": [],
+          "optional": [],
+          "viewMode": "basic"
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "filter",
+      "measured": {
+        "width": 240,
+        "height": 105
+      },
+      "position": {
+        "x": 3250,
+        "y": 100
+      },
+      "deletable": true
+    },
+    {
+      "id": "number-of-songs-12",
+      "data": {
+        "id": "number-of-songs",
+        "icon": "🔢",
+        "type": "numberOfSongs",
+        "color": "#dc2626",
+        "title": "Number of Songs",
+        "unique": false,
+        "deletable": true,
+        "instanceId": "number-of-songs-12",
+        "mustBeLast": false,
+        "description": "Determines final song count for the lobby",
+        "routeBadges": [],
+        "currentValue": {
+          "max": 25,
+          "min": 15,
+          "useRange": false,
+          "staticValue": 20
+        },
+        "defaultValue": {
+          "max": 25,
+          "min": 15,
+          "useRange": false,
+          "staticValue": 20
+        },
+        "userPositioned": false,
+        "executionChance": 100,
+        "selectionModified": false
+      },
+      "type": "numberOfSongs",
+      "measured": {
+        "width": 320,
+        "height": 325
+      },
+      "position": {
+        "x": 3600,
+        "y": 100
+      },
+      "deletable": true
+    }
+  ],
+  "metadata": {
+    "savedAt": "2026-01-27T16:06:44.067Z",
+    "version": "1.0"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2025-10-26T00:00:00.000Z",
+  "seed": "test-song-categories-basic-10",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 20,
+  "filters": [
+    {
+      "definitionId": "song-categories",
+      "instanceId": "song-categories-1",
+      "settings": {
+        "mode": "basic",
+        "enabled": {
+          "openings": {
+            "standard": true,
+            "chanting": true,
+            "character": false
+          },
+          "endings": {
+            "standard": true,
+            "chanting": false,
+            "character": false
+          },
+          "inserts": {
+            "standard": true,
+            "chanting": false,
+            "character": false
+          }
+        }
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-1",
+      "nodeType": "song-list",
+      "mode": "masterlist",
+      "useEntirePool": false
+    }
+  ]
+}
+

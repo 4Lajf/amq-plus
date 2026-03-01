@@ -1,0 +1,386 @@
+/* ── Editor2 Dark Form Utilities ──────────────────────────────────── */
+
+/* ── Hybrid filter layout (full shell + compact cards) ───────────── */
+.df-hybrid-layout {
+	display: grid;
+	width: 100%;
+	gap: 8px;
+	align-items: start;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+}
+
+.df-hybrid-full {
+	grid-column: 1 / -1;
+	width: 100%;
+}
+
+/* ── Slider dark overrides (svelte-range-slider-pips) ────────────── */
+.df-slider {
+	max-width: 100%;
+}
+
+.df-slider :global(.rangeSlider) {
+	background: color-mix(in srgb, var(--slider, var(--accent, #58a6ff)) 14%, #21262d) !important;
+	border: none !important;
+	border-radius: 4px !important;
+}
+
+.df-slider :global(.rangeSlider .rangeHandle) {
+	width: 16px !important;
+	height: 16px !important;
+}
+
+.df-slider :global(.rangeSlider .rangeBar) {
+	border-radius: 4px !important;
+}
+
+.df-slider :global(.rangeSlider .rangePips) {
+	color: #8b949e !important;
+	font-family: 'JetBrains Mono', monospace !important;
+	font-size: 10px !important;
+}
+
+/* Static pip colors — never change based on slider position */
+.df-slider :global(.rangeSlider .rangePips .pip) {
+	color: #8b949e !important;
+}
+
+.df-slider :global(.rangeSlider .rangePips .pip.selected) {
+	color: #8b949e !important;
+}
+
+.df-slider :global(.rangeSlider .rangePips .pip .pipVal) {
+	color: #6e7681 !important;
+}
+
+.df-slider :global(.rangeSlider .rangePips .pip.selected .pipVal) {
+	color: #6e7681 !important;
+}
+
+.df-slider :global(.rangeSlider .rangeFloat) {
+	background: #1c2128 !important;
+	color: #e2e8f0 !important;
+	border: 1px solid #30363d !important;
+	font-family: 'JetBrains Mono', monospace !important;
+	font-size: 11px !important;
+}
+
+/* Compact slider variant for small ranges (e.g. 0-20, 1-10) */
+.df-slider-sm {
+	max-width: 280px;
+}
+
+.df-slider-md {
+	max-width: 400px;
+}
+
+/* ── Compact row slider — sits inline within a flex row ──────────── */
+.df-slider-row {
+	flex: 1 1 auto;
+	width: auto;
+	min-width: 0;
+	padding-bottom: 0;
+	position: relative;
+}
+
+.df-slider-row :global(.rangeSlider) {
+	height: 4px !important;
+	margin: 0 !important;
+	padding-bottom: 0 !important;
+	background: color-mix(in srgb, var(--slider, var(--accent, #58a6ff)) 14%, #21262d) !important;
+	border: none !important;
+	border-radius: 3px !important;
+}
+
+.df-slider-row :global(.rangeSlider .rangeHandle) {
+	width: 12px !important;
+	height: 12px !important;
+	top: -4px !important;
+}
+
+.df-slider-row :global(.rangeSlider .rangeBar) {
+	border-radius: 3px !important;
+}
+
+.df-slider-row :global(.rangeSlider .rangePips) {
+	font-family: 'JetBrains Mono', monospace !important;
+	font-size: 8px !important;
+	top: 8px !important;
+	height: 14px !important;
+	position: absolute !important;
+	left: 0 !important;
+	right: 0 !important;
+	display: none !important;
+}
+
+.df-slider-row :global(.rangeSlider .rangePips .pip) {
+	color: #8b949e !important;
+	height: 3px !important;
+	top: 0 !important;
+}
+
+.df-slider-row :global(.rangeSlider .rangePips .pip.selected) {
+	color: #8b949e !important;
+}
+
+.df-slider-row :global(.rangeSlider .rangePips .pip .pipVal) {
+	color: #6e7681 !important;
+	top: 4px !important;
+}
+
+.df-slider-row :global(.rangeSlider .rangePips .pip.selected .pipVal) {
+	color: #6e7681 !important;
+}
+
+.df-slider-row :global(.rangeSlider .rangeFloat) {
+	background: #1c2128 !important;
+	color: #e2e8f0 !important;
+	border: 1px solid #30363d !important;
+	font-family: 'JetBrains Mono', monospace !important;
+	font-size: 9px !important;
+	padding: 1px 4px !important;
+}
+
+/* Wider variant when more range resolution needed (e.g. 0-100%) */
+.df-slider-row-wide {
+	flex: 1 1 auto;
+	width: auto;
+}
+
+/* Disabled / inactive slider: muted track & handle matching card bg */
+.df-slider-row.disabled :global(.rangeSlider) {
+	background: #1c2128 !important;
+}
+
+.df-slider-row.disabled :global(.rangeSlider .rangeBar) {
+	background: #30363d !important;
+}
+
+.df-slider-row.disabled :global(.rangeSlider .rangeHandle) {
+	background: #30363d !important;
+	border-color: #8b949e !important;
+}
+
+/* ── Pill toggle group ───────────────────────────────────────────── */
+.df-pill-group {
+	display: inline-flex;
+	border-radius: 6px;
+	background: #161b22;
+	border: 1px solid #21262d;
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+.df-pill-group button {
+	font-family: 'DM Sans', system-ui, sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 4px 12px;
+	border: none;
+	background: transparent;
+	color: #8b949e;
+	cursor: pointer;
+	transition: all 0.15s ease;
+	white-space: nowrap;
+}
+
+.df-pill-group button:not(:last-child) {
+	border-right: 1px solid #21262d;
+}
+
+.df-pill-group button:hover:not(.active):not(:disabled) {
+	color: #c9d1d9;
+	background: #1c2128;
+}
+
+.df-pill-group button.active {
+	background: color-mix(in srgb, var(--accent, #58a6ff) 18%, #161b22);
+	color: #e2e8f0;
+	font-weight: 600;
+}
+
+.df-pill-group button:disabled {
+	opacity: 0.35;
+	cursor: not-allowed;
+}
+
+/* ── Dark select dropdown ────────────────────────────────────────── */
+.df-select {
+	appearance: none;
+	font-family: 'DM Sans', system-ui, sans-serif;
+	font-size: 13px;
+	color: #c9d1d9;
+	background: #0d1117;
+	border: 1px solid #30363d;
+	border-radius: 4px;
+	padding: 4px 24px 4px 8px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238b949e' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 6px center;
+	transition: border-color 0.15s ease;
+	cursor: pointer;
+}
+
+.df-select:hover {
+	border-color: #484f58;
+}
+
+.df-select:focus {
+	outline: none;
+	border-color: var(--accent, #58a6ff);
+}
+
+.df-select:disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+.df-select option {
+	background: #161b22;
+	color: #c9d1d9;
+}
+
+/* ── Dark number input ───────────────────────────────────────────── */
+.df-input {
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 12px;
+	color: #e2e8f0;
+	background: #0d1117;
+	border: 1px solid #30363d;
+	border-radius: 4px;
+	padding: 3px 6px;
+	text-align: center;
+	transition: border-color 0.15s ease;
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+
+.df-input::-webkit-outer-spin-button,
+.df-input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.df-input:hover {
+	border-color: #484f58;
+}
+
+.df-input:focus {
+	outline: none;
+	border-color: var(--accent, #58a6ff);
+}
+
+.df-input:disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+/* ── Dark checkbox ───────────────────────────────────────────────── */
+.df-checkbox {
+	width: 15px;
+	height: 15px;
+	border-radius: 3px;
+	border: 1px solid #30363d;
+	background: #0d1117;
+	cursor: pointer;
+	accent-color: var(--accent, #58a6ff);
+	flex-shrink: 0;
+}
+
+.df-checkbox:checked {
+	background: var(--accent, #58a6ff);
+	border-color: var(--accent, #58a6ff);
+}
+
+/* ── Prediction panel ────────────────────────────────────────────── */
+.df-prediction {
+	border-radius: 6px;
+	border: 1px solid color-mix(in srgb, var(--accent, #58a6ff) 20%, #21262d);
+	background: color-mix(in srgb, var(--accent, #58a6ff) 5%, #0d1117);
+	padding: 10px 14px;
+}
+
+.df-prediction-title {
+	font-family: 'DM Sans', system-ui, sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	color: #8b949e;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	margin-bottom: 8px;
+}
+
+.df-prediction-grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.df-prediction-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	border-radius: 4px;
+	border: 1px solid #21262d;
+	background: #161b22;
+	padding: 4px 10px;
+	font-family: 'DM Sans', system-ui, sans-serif;
+	font-size: 12px;
+}
+
+.df-prediction-chip .chip-label {
+	font-weight: 600;
+	color: #c9d1d9;
+}
+
+.df-prediction-chip .chip-value {
+	font-family: 'JetBrains Mono', monospace;
+	font-weight: 500;
+}
+
+.df-prediction-chip .chip-note {
+	font-size: 10px;
+	color: #6e7681;
+	font-style: italic;
+}
+
+.df-prediction-divider {
+	width: 1px;
+	align-self: stretch;
+	background: #30363d;
+	margin: 0 4px;
+}
+
+/* ── Error / validation bar ──────────────────────────────────────── */
+.df-error-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 8px;
+	border-radius: 6px;
+	border: 1px solid #f8514933;
+	background: #f8514910;
+	padding: 8px 14px;
+	font-family: 'DM Sans', system-ui, sans-serif;
+	font-size: 12px;
+	color: #f85149;
+}
+
+.df-error-bar .quick-fix-btn {
+	white-space: nowrap;
+	border-radius: 4px;
+	border: 1px solid #f8514933;
+	background: #f8514915;
+	padding: 3px 10px;
+	font-family: 'DM Sans', system-ui, sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	color: #f8857f;
+	cursor: pointer;
+	transition: background 0.15s ease;
+}
+
+.df-error-bar .quick-fix-btn:hover {
+	background: #f8514928;
+}
