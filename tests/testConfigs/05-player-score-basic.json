@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-10-26T00:00:00.000Z",
+  "seed": "test-player-score-basic-05",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 20,
+  "filters": [
+    {
+      "definitionId": "player-score",
+      "instanceId": "player-score-1",
+      "settings": {
+        "mode": "range",
+        "min": 6,
+        "max": 10,
+        "disabled": [6]
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-1",
+      "nodeType": "song-list",
+      "mode": "user-lists",
+      "useEntirePool": false,
+      "userListImport": {
+        "platform": "anilist",
+        "username": "4Lajf",
+        "selectedLists": {
+          "completed": true,
+          "watching": false,
+          "planning": false,
+          "on_hold": false,
+          "dropped": false
+        }
+      }
+    }
+  ]
+}
+

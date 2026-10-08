@@ -1,0 +1,33 @@
+node_modules
+
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+.DS_Store
+Thumbs.db
+
+.env
+.env.*
+!.env.example
+!.env.test
+
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+commit-dual-repo.ps1
+*.log
+src/lib/server/masterlist.backup.json
+src/lib/server/masterlist.tmp.json
+src/lib/server/masterlist.refreshed.json
+src/lib/server/masterlist.pre-gapfill.json
+src/lib/server/masterlist.locked.json
+# Track the connector here alongside its server contract.
+# Public userscript updates are published separately from amq-scripts.
+amq
+download-scripts.js
+files.txrt
+.mal-oauth-pending.json

@@ -1,0 +1,24 @@
+-- No-op stub matching the remote migration history entry of the same name.
+-- Real DDL: 20260807000003_bulk_reschedule_function.sql (create or replace).
+--
+-- DO NOT DELETE THIS FILE. It exists because this migration was applied a second
+-- time under a CLI-generated timestamp, so the remote history table has a row
+-- for this version. Removing the stub re-creates the drift between local and
+-- remote history that it exists to close.
+--
+-- There is wider drift for the same reason: five migrations from 2026-08-10 are
+-- recorded twice, once under the repo timestamps and once under CLI ones. The
+-- SQL is identical on both sides - verified statement for statement against
+-- supabase_migrations.schema_migrations - so nothing is missing, and the only
+-- symptom is that `supabase db push` will complain. To reconcile, from the repo
+-- root with the project linked:
+--
+--   supabase migration repair --status applied  20260810120000 20260810130000 --       20260810140000 20260810150000 20260810160000
+--   supabase migration repair --status reverted 20260810014122 20260810095404 --       20260810100204 20260810100548 20260810133635
+--   supabase migration list
+--
+-- That rewrites the history table only. It runs no DDL, so the schema is
+-- untouched either way, which is why it is safe at any time and why skipping it
+-- costs nothing until the next push.
+
+select 1;

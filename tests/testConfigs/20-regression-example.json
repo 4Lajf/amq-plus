@@ -1,0 +1,305 @@
+{
+  "timestamp": "2025-10-26T15:35:11.364Z",
+  "seed": "export-sim-1761492911363",
+  "router": null,
+  "basicSettings": {
+    "guessTime": 20,
+    "extraGuessTime": 0,
+    "samplePoint": {
+      "kind": "range",
+      "min": 0,
+      "max": 100
+    },
+    "playbackSpeed": 1
+  },
+  "numberOfSongs": 25,
+  "filters": [
+    {
+      "definitionId": "songs-and-types",
+      "instanceId": "songs-types-2-4",
+      "settings": {
+        "mode": "percentage",
+        "total": 25,
+        "types": {
+          "openings": 97,
+          "endings": 3
+        },
+        "typesRanges": {
+          "openings": {
+            "min": 20,
+            "max": 100
+          },
+          "endings": {
+            "min": 0,
+            "max": 20
+          }
+        },
+        "songSelection": {
+          "random": 0,
+          "watched": 100
+        },
+        "songSelectionRanges": {
+          "random": {
+            "min": 0,
+            "max": 0
+          },
+          "watched": {
+            "min": 100,
+            "max": 100
+          }
+        }
+      }
+    },
+    {
+      "definitionId": "vintage",
+      "instanceId": "vintage-2-5",
+      "settings": {
+        "mode": "advanced",
+        "total": 25,
+        "ranges": [
+          {
+            "from": {
+              "year": 2010,
+              "season": "Winter"
+            },
+            "to": {
+              "year": 2023,
+              "season": "Winter"
+            },
+            "value": 5,
+            "valueRange": {
+              "min": 5,
+              "max": 5
+            }
+          },
+          {
+            "from": {
+              "year": 2000,
+              "season": "Winter"
+            },
+            "to": {
+              "year": 2002,
+              "season": "Fall"
+            },
+            "value": 13,
+            "valueRange": {
+              "min": 13,
+              "max": 13
+            }
+          },
+          {
+            "from": {
+              "season": "Winter",
+              "year": 1944
+            },
+            "to": {
+              "season": "Fall",
+              "year": 2025
+            },
+            "value": 8,
+            "valueRange": {
+              "min": 8,
+              "max": 8
+            }
+          }
+        ]
+      }
+    },
+    {
+      "definitionId": "song-difficulty",
+      "instanceId": "difficulty-2-7",
+      "settings": {
+        "mode": "advanced",
+        "viewMode": "advanced",
+        "ranges": [
+          {
+            "from": 60,
+            "to": 100,
+            "songCount": 3,
+            "songCountRange": {
+              "min": 3,
+              "max": 3
+            }
+          },
+          {
+            "from": 25,
+            "to": 60,
+            "songCount": 11,
+            "songCountRange": {
+              "min": 8,
+              "max": 19
+            }
+          },
+          {
+            "from": 0,
+            "to": 25,
+            "songCount": 12,
+            "songCountRange": {
+              "min": 10,
+              "max": 19
+            }
+          }
+        ],
+        "total": 25
+      }
+    },
+    {
+      "definitionId": "player-score",
+      "instanceId": "player-score-2-8",
+      "settings": {
+        "mode": "range",
+        "min": 6,
+        "max": 10,
+        "disabled": [
+          6
+        ],
+        "counts": {
+          "7": 6,
+          "8": 6
+        },
+        "percentages": {
+          "7": 25,
+          "8": 25
+        }
+      }
+    },
+    {
+      "definitionId": "anime-score",
+      "instanceId": "anime-score-2-9",
+      "settings": {
+        "mode": "range",
+        "min": 7,
+        "max": 10,
+        "disabled": [
+          9
+        ]
+      }
+    },
+    {
+      "definitionId": "anime-type",
+      "instanceId": "anime-type-2-10",
+      "settings": {
+        "mode": "basic",
+        "enabled": [
+          "tv",
+          "movie",
+          "ova"
+        ]
+      }
+    },
+    {
+      "definitionId": "song-categories",
+      "instanceId": "song-categories-2-11",
+      "settings": {
+        "mode": "advanced",
+        "total": 25,
+        "categories": {
+          "openings": {
+            "standard": 3,
+            "chanting": 3,
+            "character": 3
+          },
+          "endings": {
+            "standard": 3,
+            "chanting": 3,
+            "character": 3
+          },
+          "inserts": {
+            "standard": 3,
+            "chanting": 3,
+            "character": 3
+          }
+        },
+        "categoriesRanges": {
+          "openings": {
+            "standard": {
+              "min": 3,
+              "max": 3
+            },
+            "chanting": {
+              "min": 3,
+              "max": 3
+            },
+            "character": {
+              "min": 3,
+              "max": 3
+            }
+          },
+          "endings": {
+            "standard": {
+              "min": 3,
+              "max": 3
+            },
+            "chanting": {
+              "min": 3,
+              "max": 3
+            },
+            "character": {
+              "min": 3,
+              "max": 3
+            }
+          },
+          "inserts": {
+            "standard": {
+              "min": 3,
+              "max": 3
+            },
+            "chanting": {
+              "min": 3,
+              "max": 3
+            },
+            "character": {
+              "min": 3,
+              "max": 3
+            }
+          }
+        }
+      }
+    },
+    {
+      "definitionId": "tags",
+      "instanceId": "tags-2-12",
+      "settings": {
+        "mode": "basic",
+        "included": [],
+        "excluded": [
+          "Male Protagonist"
+        ],
+        "optional": []
+      }
+    },
+    {
+      "definitionId": "genres",
+      "instanceId": "genres-14",
+      "settings": {
+        "mode": "percentage",
+        "items": [
+          {
+            "label": "Ecchi",
+            "value": 15,
+            "status": "optional"
+          },
+          {
+            "label": "Action",
+            "value": 10,
+            "status": "include"
+          },
+          {
+            "label": "Adventure",
+            "value": 0,
+            "status": "exclude"
+          }
+        ],
+        "showRates": true
+      }
+    }
+  ],
+  "songLists": [
+    {
+      "nodeId": "song-list-15",
+      "nodeType": "song-list",
+      "mode": "masterlist",
+      "useEntirePool": false
+    }
+  ]
+}

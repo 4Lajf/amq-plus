@@ -1,0 +1,33 @@
+import {readFileSync} from 'node:fs';
+import {expect,it,vi} from 'vitest';
+const source=readFileSync(new URL('../amqPlusConnector.user.js',import.meta.url),'utf8');
+const start=source.indexOf('    // Read the current preference for each event');
+const end=source.indexOf('    // Hover effects.',start);
+if(start<0||end<0) throw new Error('Mouse handlers not found');
+it('existing Skip handlers follow preference changes without rebinding',()=>{
+ const handlers={}; const state={requireDoubleClick:true}; const skip=vi.fn();
+ const $=selector=>({off(){return this;},on(events,handler){handlers[selector]=handler;return this;}});
+ Function('$','trainingState','skipTrainingRating','handleMissOverrideClick','submitTrainingRating',source.slice(start,end))($,state,skip,()=>true,()=>{});
+ const handler=handlers['.trainingSkipBtn'];
+ for(const type of ['click','click','dblclick']) handler({type});
+ expect(skip).toHaveBeenCalledTimes(1);
+ state.requireDoubleClick=false;
+ handler({type:'click'}); expect(skip).toHaveBeenCalledTimes(2);
+ handler({type:'dblclick'}); expect(skip).toHaveBeenCalledTimes(2);
+ state.requireDoubleClick=true;
+ handler({type:'click'}); expect(skip).toHaveBeenCalledTimes(2);
+ handler({type:'dblclick'}); expect(skip).toHaveBeenCalledTimes(3);
+});
+it('rating handlers retain miss confirmation and follow the current preference',()=>{
+ const handlers={}; const state={requireDoubleClick:true}; const submit=vi.fn();
+ const override=vi.fn().mockReturnValueOnce(false).mockReturnValue(true);
+ const $=selector=>({off(){return this;},on(events,handler){handlers[selector]=handler;return this;},data(){return 3;}});
+ Function('$','trainingState','skipTrainingRating','handleMissOverrideClick','submitTrainingRating',source.slice(start,end))($,state,()=>{},override,submit);
+ const handler=handlers['.trainingRatingBtn'];
+ handler({type:'click'}); expect(override).not.toHaveBeenCalled();
+ handler({type:'dblclick'}); expect(submit).not.toHaveBeenCalled();
+ handler({type:'dblclick'}); expect(submit).toHaveBeenCalledWith(3);
+ state.requireDoubleClick=false;
+ handler({type:'click'}); expect(submit).toHaveBeenCalledTimes(2);
+ handler({type:'dblclick'}); expect(submit).toHaveBeenCalledTimes(2);
+});

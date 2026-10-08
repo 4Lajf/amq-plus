@@ -1,0 +1,53 @@
+{
+	"compilerOptions": {
+		// Allow JavaScript files
+		"allowJs": true,
+		"checkJs": true,
+
+		// Enable JSDoc type checking
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"allowArbitraryExtensions": true,
+
+		// Target modern JavaScript
+		"target": "ES2022",
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+
+		// Lenient type checking for JSDoc (can be made stricter later)
+		"strict": false,
+		"noImplicitAny": false,
+		"noImplicitReturns": false,
+		"noImplicitThis": false,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
+
+		// SvelteKit specific
+		"moduleDetection": "force",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"verbatimModuleSyntax": true,
+
+		// Path mapping for better imports
+		"baseUrl": ".",
+		"paths": {
+			"$lib/*": ["src/lib/*"],
+			"$app/*": [".svelte-kit/types/app/*"]
+		},
+
+		// Output configuration (we won't emit, just check)
+		"noEmit": true,
+		"declaration": false,
+		"declarationMap": false,
+		"sourceMap": false,
+
+		// Skip lib check for faster compilation
+		"skipLibCheck": true,
+
+		// Ignore missing type definitions
+		"typeRoots": [],
+		"types": []
+	},
+	"include": ["src/**/*.js", "src/**/*.svelte", "src/**/*.ts", "src/examples/**/*.js"],
+	"exclude": ["node_modules", ".svelte-kit", "build", "dist"]
+}
